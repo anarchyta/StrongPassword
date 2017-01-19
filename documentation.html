@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strong Password Generator</title>
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet'/>
+    <link href='assets/css/style.min.css' rel='stylesheet'/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1><span class="text-uppercase">Strong Password</span> <small>Generator</small></h1>
+        <p>Generate strong, secure, random passwords online. Also, learn to define strong passwords.</p>
+        <a class="btn btn-default" href="index.html">Demo</a>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="container">
+        <div class="page-header">
+          <h2>Documentation</h2>
+        </div>
+        <p class="lead">How to use?</p>
+        <ol>
+          <li>Make sure that you included his Plugin depends on it. Then, include in the Plugin this project. After buy, plugin in the folder plugins.<br/><pre>&lt;!-- jQuery (necessary for StrongPass.js JavaScript plugins) --&gt;<br/>&lt;script type="text/javascript" src="jquery.min.js"&gt;&lt;/script&gt;<br/>&lt;!-- Include all compiled plugins (below), files as needed --&gt;<br/>&lt;script type="text/javascript" src="StrongPass.min.js"&gt;&lt;/script&gt;</pre></li>
+          <li>Place the text in which the password will be also a button that will change the password in the event of the pressure in the <code>div</code> is to be the parent for them and give any name by property <code>class</code> or <code>id</code>.</li>
+          <li>Call the function responsible for the operation of the Plugin using the property that you giving them for the <code>div</code>.<br/><pre>$('#test').generatePassword({<br/>  passCharSet: "a-z,A-Z,0-9,#", // if you use all character<br/>  passSize: "15"<br/>});</pre></li>
+          <li>There is some of her Option<br/>For example, to determine the length of the password or to select letters and signs and figures that wants to be in the password.
+            <ul>
+              <li><code>passCharSet</code><br/>These are used to determine the specific type of special characters, for example, you are a character, or a figure, this property accepts letters of 0-9 and also accepts a-z, A-Z as well as special characters.</li>
+              <li><code>passSize</code><br/>It is a property that is used in determining the length of the password.</li>
+            </ul>
+          </li>
+          <li>Create the HTML<br/><pre>&lt;div class="input-group" id="test1"&gt;<br/>  &lt;input type="text"&gt;<br/>  &lt;button type="button"&gt;Refresh&lt;/button&gt;<br/>&lt;/div&gt;</pre></li>
+        </ol>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2017 Strong Password Generator</p>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
