@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Strong Password Generator</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+    <title>Documentation | Strong Password Generator</title>
     <link href='assets/css/bootstrap.min.css' rel='stylesheet'/>
     <link href='assets/css/style.min.css' rel='stylesheet'/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -15,14 +15,15 @@
     <![endif]-->
   </head>
   <body>
-    <div class="jumbotron">
+    <header class="jumbotron">
       <div class="container">
         <h1><span class="text-uppercase">Strong Password</span> <small>Generator</small></h1>
         <p>Generate strong, secure, random passwords online. Also, learn to define strong passwords.</p>
-        <a class="btn btn-default" href="index.html">Demo</a>
+        <a class="btn btn-default" href="documentation.html">Documentation</a>
+        <a class="btn btn-default" href="https://codecanyon.net/item/strong-password-generator/19335738?ref=anarchyta" target="blank">Buy Now</a>
       </div>
-    </div>
-    <div class="page-content">
+    </header>
+    <section class="page-content">
       <div class="container">
         <div class="page-header">
           <h2>Documentation</h2>
@@ -41,7 +42,7 @@
           <li>Create the HTML<br/><pre>&lt;div class="input-group" id="test1"&gt;<br/>  &lt;input type="text"&gt;<br/>  &lt;button type="button"&gt;Refresh&lt;/button&gt;<br/>&lt;/div&gt;</pre></li>
         </ol>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <p>&copy; 2017 Strong Password Generator | Made with <i class="glyphicon glyphicon-heart text-danger"></i> By <span class="author"></span></p>
@@ -52,20 +53,5 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/StrongPass.min.js"></script>
-    <script type="text/javascript">
-      $('#test1').generatePassword();
-      $('#test2').generatePassword({
-          passCharSet: "a-z",
-      });
-      $('#test3').generatePassword({
-          passCharSet: "A-Z",
-      });
-      $('#test4').generatePassword({
-          passCharSet: "0-9",
-      });
-      $('#test5').generatePassword({
-          passCharSet: "#",
-      });
-    </script>
   </body>
 </html>
