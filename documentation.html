@@ -44,12 +44,28 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2017 Strong Password Generator</p>
+        <p>&copy; 2017 Strong Password Generator | Made with <i class="glyphicon glyphicon-heart text-danger"></i> By <span class="author"></span></p>
       </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/StrongPass.min.js"></script>
+    <script type="text/javascript">
+      $('#test1').generatePassword();
+      $('#test2').generatePassword({
+          passCharSet: "a-z",
+      });
+      $('#test3').generatePassword({
+          passCharSet: "A-Z",
+      });
+      $('#test4').generatePassword({
+          passCharSet: "0-9",
+      });
+      $('#test5').generatePassword({
+          passCharSet: "#",
+      });
+    </script>
   </body>
 </html>
